@@ -1,0 +1,65 @@
+h2 {
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(165, 42, 42, 0.699);
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 100%; /* Center vertically on the page */
+    width: 100%; /* Center horizontally on the page */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 50%; /* Adjust to match the width of your items */
+    max-width: 700px;
+    background-color: white;
+    transform-box: fill-box;
+}
+
+.carousel-item {
+    min-width: 700px;
+    width: 100%;
+    min-height: 200px;
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+li {
+    text-align: left;
+}
+
+/* img {
+
+} */
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 70%;
+    /* transform: translateY(-50%); */
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
